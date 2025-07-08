@@ -14,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="stylesheet" href="/luxury-films/globals.css" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body>
