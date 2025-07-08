@@ -60,6 +60,10 @@ export default function Portfolio() {
     { src: '/media/fotos/retratos/IMG_20231111_092716.jpg', category: 'retratos' },
     { src: '/media/fotos/retratos/IMG_20231111_093213.jpg', category: 'retratos' },
     { src: '/media/fotos/retratos/IMG_20231111_094644.jpg', category: 'retratos' },
+    { src: '/media/fotos/retratos/SUBELE+AL+BRILLO+++#movie+#producer+#peliculas+#producionmusical.jpg', category: 'retratos' },
+    { src: '/media/fotos/retratos/Sube+otro+nivel+y+ahora+vuelo+como+Mario+++juandavzoficialyosoyriizejphoto_joshy+Duro+con+esas+foto+bro++#fotos#video#nuevo+#viral+#cancion+#fama (1).jpg', category: 'retratos' },
+    { src: '/media/fotos/retratos/Sube+otro+nivel+y+ahora+vuelo+como+Mario+++juandavzoficialyosoyriizejphoto_joshy+Duro+con+esas+foto+bro++#fotos#video#nuevo+#viral+#cancion+#fama (2).jpg', category: 'retratos' },
+    { src: '/media/fotos/retratos/Sube+otro+nivel+y+ahora+vuelo+como+Mario+++juandavzoficialyosoyriizejphoto_joshy+Duro+con+esas+foto+bro++#fotos#video#nuevo+#viral+#cancion+#fama.jpg', category: 'retratos' },
     { src: '/media/fotos/retratos/lysf_04Mompox+Mágico++#fotos+#fotografia+#mompox+#magico+#photography+#producer (1).jpg', category: 'retratos' },
     { src: '/media/fotos/retratos/lysf_04Mompox+Mágico++#fotos+#fotografia+#mompox+#magico+#photography+#producer (2).jpg', category: 'retratos' },
     { src: '/media/fotos/retratos/lysf_04Mompox+Mágico++#fotos+#fotografia+#mompox+#magico+#photography+#producer.jpg', category: 'retratos' },
@@ -258,7 +262,7 @@ export default function Portfolio() {
   ];
 
   const filteredMedia = () => {
-    let media = [];
+    let media: Array<{ src: string; thumbnail?: string; category: string }> = [];
     if (selectedMediaType === 'all' || selectedMediaType === 'photo') {
       media = [...media, ...photos];
     }
