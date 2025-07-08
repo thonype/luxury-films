@@ -2,8 +2,8 @@
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/luxury-films',
+  assetPrefix: '/luxury-films',
   trailingSlash: true
 }
 
