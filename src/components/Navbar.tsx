@@ -17,11 +17,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Inicio', href: '/luxury-films' },
-    { name: 'Sobre Nosotros', href: '/luxury-films#about' },
-    { name: 'Servicios', href: '/luxury-films#services' },
-    { name: 'Portafolio', href: '/luxury-films#portfolio' },
-    { name: 'Contacto', href: '/luxury-films#contact' },
+    { name: 'Inicio', href: '/' },
+    { name: 'Sobre Nosotros', href: '/#about' },
+    { name: 'Servicios', href: '/#services' },
+    { name: 'Portafolio', href: '/#portfolio' },
+    { name: 'Contacto', href: '/#contact' },
   ];
 
   return (
