@@ -4,7 +4,11 @@ const nextConfig = {
   images: { unoptimized: true },
   basePath: '/luxury-films',
   assetPrefix: '/luxury-films',
-  trailingSlash: true
+  trailingSlash: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  }
 }
 
 module.exports = nextConfig
